@@ -1,0 +1,53 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background: url(../img/jdt_jd.png) 0 0;
+}
+#start,#playing{
+	width:320px;
+	height:480px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+}
+#playing{
+	display:none;
+}
+#playing img{
+	position:absolute;
+}
+#playing p{
+	position:absolute;
+	width:100px;
+	height:35px;
+	line-height:35px;
+	margin:6px 0 0 55px;
+	color:#3BCBFF;
+	font-size:30px;
+	z-index:1;
+}
+#startBtn{
+	height:50px;
+	width:180px;
+	line-height:50px;
+	text-align:center;
+	font-size:30px;
+	color:#BFBFBF;
+	box-shadow:0 0 10px 5px #76EEC6;
+	background-color:#6E8B3D;
+	border-radius:5px;
+	position:absolute;
+	z-index:3;
+	left:50%; 
+	top:50%;
+	transform: translate(-50%,-50%);
+}
+#progress{
+	height:16px;
+	position:absolute;
+	top:66px;
+	left:63px;
+}

@@ -1,0 +1,41 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>锅打灰太狼</title>
+
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+
+	<div id="start">
+	<p id="startBtn">开始游戏</p>
+		<img  src="img/myrank_bg.jpg">	
+	</div>
+	<div id="playing">
+		<p id="score">0</p>
+		<img src="img/game_bg.jpg">
+		<img id="progress" src="img/progress.png">
+	</div>
+	<img id="jiazai" src="">
+</body>
+<script type="text/javascript" src="js/index.js">
+</script>
+<script type="text/javascript">
+onload=function(){
+	var ojiazai=document.getElementById("jiazai");
+	ojiazai.style.display="none";
+	var i=0;
+	var jiazaitimer =setInterval(function(){
+		ojiazai.style.background="url(img/h"+i+".png)"
+		ojiazai.src="img/x"+i+".png"
+		i++;
+		if(i==10){
+			clearInterval(jiazaitimer);
+		}
+	},100);
+		
+	
+}
+</script>
+</html>
