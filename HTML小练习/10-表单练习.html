@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10-表单练习</title>
+</head>
+<body>
+<form action="http://www.520it.com">
+    <fieldset>
+        <legend>注册界面</legend>
+        <p>
+            账号: <input type="text" name="username">
+        </p>
+        <p>
+            密码: <input type="password" name="pwd">
+        </p>
+        <p>
+            性别:
+            <input type="radio" name="gender" value="male">男
+            <input type="radio" name="gender" value="female">女
+            <input type="radio" name="gender" checked="checked" value="yao">保密
+        </p>
+        <p>
+            爱好:
+            <input type="checkbox" name="hobby" value="basketball">篮球
+            <input type="checkbox" name="hobby" value="football">足球
+            <input type="checkbox" name="hobby" checked="checked" value="crazy">足浴
+        </p>
+        <p>
+            个人简介:
+            <textarea cols="25" rows="5"></textarea>
+        </p>
+        <p>
+            生日: <input type="date" name="birthday">
+        </p>
+        <p>
+            邮箱: <input type="email" name="email">
+        </p>
+        <p>
+            手机: <input type="number" maxlength="11" name="phone">
+        </p>
+        <p>
+            <input type="submit" value="注册">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="清空">
+        </p>
+    </fieldset>
+</form>
+</body>
+</html>
